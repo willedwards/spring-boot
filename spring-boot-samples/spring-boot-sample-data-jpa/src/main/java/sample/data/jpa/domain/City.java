@@ -16,14 +16,11 @@
 
 package sample.data.jpa.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
 @Entity
+@Table(name = "CITY")
 public class City implements Serializable {
 
 	private static final long serialVersionUID = 1L;

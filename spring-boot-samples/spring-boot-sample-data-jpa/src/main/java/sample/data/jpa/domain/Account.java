@@ -5,28 +5,28 @@ package sample.data.jpa.domain;/**
  */
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity
-public class Account //extends Item implements Serializable
+public class Account extends Item implements Serializable
 {
-    @Id
-    private String id;
+//    @Id
+//    private String id;
     private String contactId;
     private String organisationId;
 
     public Account(){
     }
 
-    public String getId()
-    {
-        return id;
-    }
-
-    public void setId(String id)
-    {
-        this.id = id;
-    }
+//    public String getId()
+//    {
+//        return id;
+//    }
+//
+//    public void setId(String id)
+//    {
+//        this.id = id;
+//    }
 
     public String getContactId()
     {
